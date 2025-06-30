@@ -272,8 +272,16 @@ Log notice stdout
         xpaths = [
             "//button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]",
             "//button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'ablehnen')]",
-            "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/button[3]"
-            "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/button[2]"
+            "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/button[3]",
+            "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/button[2]",
+            "//*[contains(text(), 'Alle akzeptieren')]",
+            "//*[contains(text(), 'Akzeptieren')]",
+            "//*[contains(text(), 'Einverstanden')]",
+            "//*[contains(text(), 'Zustimmen')]",
+            "//button[contains(@id, 'accept')]",
+            "//button[contains(@class, 'cookie')]",
+            "//div[contains(@class, 'cookie')]//button",
+            "//a[contains(text(), 'Akzeptieren')]"
         ]
         for path in xpaths:
             try:
@@ -286,6 +294,40 @@ Log notice stdout
             except NoSuchElementException:
                 continue
         logger.info("Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.")
+
+    # def dismiss_cookie_banner(self, timeout=0.1):
+    #     """Verbesserte Methode zum Schließen von Cookie-Bannern"""
+    #     selectors = [
+    #         "button[id*='cookie']",              # id enthält cookie
+    #         "button[class*='cookie']",          # class enthält cookie
+    #         "button[data-action*='accept']",    # data attribute
+    #         "button[class*='consent']",
+    #     ]
+    #     for sel in selectors:
+    #         try:
+    #             wait = WebDriverWait(self.driver, timeout)
+    #             btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, sel)))
+    #             btn.click()
+    #             logger.info(f"Cookie-Banner geschlossen über {sel}")
+    #             return True
+    #         except TimeoutException:
+    #             continue
+    #         except Exception as e:
+    #             logger.warning(f"Fehler beim Schließen des Cookie-Banners ({sel}): {e}")
+    #     # Fallback: Banner per JS entfernen
+    #     try:
+    #         # self.driver.execute_script(
+    #         #     "document.querySelectorAll('[class*="cookie"],[id*="cookie"]').forEach(e => e.remove();"
+    #         # )
+    #         self.driver.execute_script(
+    #             'document.querySelectorAll("[class*=\\"cookie\\"],[id*=\\"cookie\\"]").forEach(e => e.remove());'
+    #         )
+
+    #         logger.info("Cookie-Banner per JS entfernt")
+    #         return True
+    #     except Exception as e:
+    #         logger.warning(f"JS-Fallback fehlgeschlagen: {e}")
+    #         return False
 
 
     def wait_for_element(self, locator_type, locator_value, timeout=10):
