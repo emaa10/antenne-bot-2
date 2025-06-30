@@ -39,6 +39,19 @@ class TorBotTester:
         
     def setup_tor_browser(self):
         """Tor Browser mit deutschen Exit-Knoten konfigurieren"""
+        tor_exe = os.path.join(os.getcwd(), "tor.exe")
+        torrc_path = os.path.join(os.getcwd(), "torrc_german_exits")
+        if os.path.exists(tor_exe):
+            try:
+                subprocess.Popen([tor_exe, "-f", torrc_path])
+                logger.info("Tor (portable) gestartet")
+                time.sleep(5)
+            except Exception as e:
+                logger.error(f"Fehler beim Starten von Tor: {e}")
+        else:
+            logger.error("tor.exe nicht gefunden – bitte prüfen.")
+
+
         try:
             self.configure_tor_for_german_exits()
             options = Options()

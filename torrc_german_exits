@@ -1,0 +1,15 @@
+
+# Nur deutsche Exit-Knoten verwenden
+ExitNodes {de}
+StrictNodes 1
+
+# Control Port aktivieren
+ControlPort 9051
+
+# SOCKS Port
+SocksPort 9050
+
+# CookieAuthentication 1
+
+# Logging reduzieren
+Log notice stdout
