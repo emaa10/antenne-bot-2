@@ -40,89 +40,37 @@ class TorBotTester:
     def setup_tor_browser(self):
         """Tor Browser mit deutschen Exit-Knoten konfigurieren"""
         try:
-            # Erst Tor-Konfiguration für deutsche Exit-Knoten setzen
             self.configure_tor_for_german_exits()
-            
-            # Firefox Optionen für Tor
             options = Options()
             #options.add_argument("--headless")  # Headless Modus
-            
-            # Tor Browser Profil erstellen
             profile = webdriver.FirefoxProfile()
             
-            # Proxy für Tor konfigurieren
             profile.set_preference("network.proxy.type", 1)
             profile.set_preference("network.proxy.socks", "127.0.0.1")
             profile.set_preference("network.proxy.socks_port", 9050)
             profile.set_preference("network.proxy.socks_version", 5)
             profile.set_preference("network.proxy.socks_remote_dns", True)
-            
-            # User-Agent setzen
             profile.set_preference("general.useragent.override", 
                                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
-            
-            # JavaScript und andere Einstellungen
             profile.set_preference("javascript.enabled", True)
             profile.set_preference("dom.webdriver.enabled", False)
             profile.set_preference("useAutomationExtension", False)
-            
-            # Firefox Optionen mit Profil kombinieren
             options.profile = profile
-            
-            # Service erstellen
             service = Service(self.geckodriver_path)
-            
-            # Driver erstellen (ohne firefox_profile Parameter)
             self.driver = webdriver.Firefox(
                 service=service,
                 options=options
             )
-            
-            self.driver.set_page_load_timeout(30)
-
+            self.driver.set_page_load_timeout(10)
             self.driver.execute_script("document.body.style.zoom='30%'")
             logger.info("Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten")
-
             logger.info("Tor Browser erfolgreich gestartet")
-            
-            # IP-Adresse prüfen um deutschen Exit zu verifizieren
-            # self.verify_german_exit()
             return True
             
         except Exception as e:
             logger.error(f"Fehler beim Starten des Tor Browsers: {e}")
             return False
     
-    # def configure_tor_for_german_exits(self):
-    #     """Tor für deutsche Exit-Knoten konfigurieren"""
-    #     try:
-    #         # import stem.control
-            
-    #         # with stem.control.Controller.from_port(port=9051) as controller:
-    #         #     controller.authenticate()
-
-    #         subprocess.run(["(echo authenticate '""'; echo signal newnym; echo quit) | nc localhost 9051"])
-    #         time.sleep(2)
-    #         # self.restart_browser()
-
-    #         # subprocess.run(["curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/"])
-                
-    #             # Deutsche Exit-Knoten erzwingen
-    #             # controller.set_conf("ExitNodes", "{de}")
-    #             # controller.set_conf("StrictNodes", "1")
-                
-    #             # # Neue Identität für sofortige Anwendung
-    #             # controller.signal(stem.Signal.NEWNYM)
-    #         # logger.info(f"Neue IP: {ip}")
-                
-    #             # logger.info("Tor für deutsche Exit-Knoten konfiguriert")
-    #         time.sleep(1)  # Warten bis Konfiguration aktiv
-                
-    #     except Exception as e:
-    #         logger.warning(f"Konnte Tor-Konfiguration nicht setzen: {e}")
-    #         logger.info("Fallback: Versuche über torrc-Datei zu konfigurieren")
-    #         self.create_custom_torrc()
-
     def configure_tor_for_german_exits(self):
         """Tor für deutsche Exit-Knoten konfigurieren und neue IP anzeigen"""
         try:
@@ -137,7 +85,6 @@ class TorBotTester:
 
     
     def create_custom_torrc(self):
-        """Erstelle temporäre torrc mit deutschen Exit-Knoten"""
         try:
             torrc_content = """
 # Nur deutsche Exit-Knoten verwenden
@@ -167,75 +114,14 @@ Log notice stdout
         except Exception as e:
             logger.error(f"Konnte torrc nicht erstellen: {e}")
     
-    def verify_german_exit(self):
-        """Prüft ob deutscher Exit-Knoten verwendet wird"""
-        try:
-            # IP-Adresse und Land prüfen
-            self.driver.get("https://check.torproject.org/api/ip")
-            time.sleep(2)
-            
-            # JSON Response lesen
-            response_text = self.driver.find_element(By.TAG_NAME, "pre").text
-            import json
-            data = json.loads(response_text)
-            
-            ip_address = data.get("IP", "Unbekannt")
-            logger.info(f"Aktuelle Exit-IP: {ip_address}")
-            
-            # Zusätzlich Land über separate API prüfen
-            self.driver.get(f"http://ip-api.com/json/{ip_address}")
-            time.sleep(2)
-            
-            geo_response = self.driver.find_element(By.TAG_NAME, "pre").text
-            geo_data = json.loads(geo_response)
-            country = geo_data.get("country", "Unbekannt")
-            country_code = geo_data.get("countryCode", "Unbekannt")
-            
-            logger.info(f"Exit-Knoten Land: {country} ({country_code})")
-            
-            if country_code != "DE":
-                logger.warning(f"WARNUNG: Exit-Knoten nicht in Deutschland! Land: {country}")
-                logger.warning("Prüfe Tor-Konfiguration und starte neu")
-                return False
-            else:
-                logger.info("✓ Deutscher Exit-Knoten bestätigt")
-                return True
-                
-        except Exception as e:
-            logger.warning(f"Konnte Exit-Knoten nicht verifizieren: {e}")
-            return False
-    
     def new_tor_circuit(self):
         """Neuen Tor-Kanal erstellen mit deutschen Exit-Knoten"""
         try:
             subprocess.run(["(echo authenticate ''; echo signal newnym; echo quit) | nc localhost 9051"], shell=True)
             self.restart_browser()
-
-            # import stem.control
-            
-            # with stem.control.Controller.from_port(port=9051) as controller:
-            #     controller.authenticate()
-                
-            #     # Deutsche Exit-Knoten erneut sicherstellen
-            #     controller.set_conf("ExitNodes", "{de}")
-            #     controller.set_conf("StrictNodes", "1")
-                
-            #     # Neue Identität erstellen
-            #     # controller.signal(stem.Signal.NEWNYM)
-            #     with controller.from_port(port=9051) as controller:
-            #         controller.authenticate()  # nutzt Cookie Auth automatisch
-            #         controller.signal(stem.Signal.NEWNYM)
-
-            #     logger.info("Neuer Tor-Kanal mit deutschen Exit-Knoten erstellt")
-            #     time.sleep(5)  # Warten bis neuer Kanal aktiv ist
-                
-                # Nach Kanal-Wechsel Exit-Knoten verifizieren
-                # if hasattr(self, 'driver') and self.driver:
-                    # self.verify_german_exit()
                 
         except Exception as e:
             logger.warning(f"Konnte keinen neuen Tor-Kanal erstellen: {e}")
-            # Fallback: Browser neu starten
             self.restart_browser()
     
     def restart_browser(self):
@@ -245,28 +131,7 @@ Log notice stdout
         time.sleep(0.5)
         self.setup_tor_browser()
 
-    # def dismiss_cookie_banner(self):
-    #     print("IN COOKIE FUNC")
-    #     """Cookie-Banner wegklicken, wenn vorhanden"""
-    #     try:
-
-    #         cookie_button = self.wait_for_element("xpath", "//button[contains(text(), 'Akzeptieren') or contains(text(), 'Alle akzeptieren')]", 1)
-    #         if cookie_button:
-    #             cookie_button.click()
-    #             logger.info("Cookie-Banner geschlossen")
-    #         # cookie_button = self.driver.find_element(By.XPATH, "/div/div/d^^[2]/div/div[2]/div/div[2]/div/div[1]/div/div/button[3]")
-    #         # cookie_button.click()
-    #         # cookie_button = self.driver.find_element(By.XPATH, "/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/button[3]")
-    #         # cookie_button.click()
-    #         # logger.info("Cookie-Banner geschlossen.")
-    #         time.sleep(1)  # etwas warten nach dem Klick
-    #     except NoSuchElementException:
-    #         print("No such element")
-    #     except Exception as e:
-    #         logger.warning(f"Fehler beim Schließen des Cookie-Banners: {e}")
-        
-    #     time.sleep(0.5)
-
+    # WORKING HOPEFULLY
     def dismiss_cookie_banner(self):
         """Cookie-Banner wegklicken, wenn vorhanden - ohne Wartezeiten"""
         xpaths = [
@@ -294,41 +159,6 @@ Log notice stdout
             except NoSuchElementException:
                 continue
         logger.info("Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.")
-
-    # def dismiss_cookie_banner(self, timeout=0.1):
-    #     """Verbesserte Methode zum Schließen von Cookie-Bannern"""
-    #     selectors = [
-    #         "button[id*='cookie']",              # id enthält cookie
-    #         "button[class*='cookie']",          # class enthält cookie
-    #         "button[data-action*='accept']",    # data attribute
-    #         "button[class*='consent']",
-    #     ]
-    #     for sel in selectors:
-    #         try:
-    #             wait = WebDriverWait(self.driver, timeout)
-    #             btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, sel)))
-    #             btn.click()
-    #             logger.info(f"Cookie-Banner geschlossen über {sel}")
-    #             return True
-    #         except TimeoutException:
-    #             continue
-    #         except Exception as e:
-    #             logger.warning(f"Fehler beim Schließen des Cookie-Banners ({sel}): {e}")
-    #     # Fallback: Banner per JS entfernen
-    #     try:
-    #         # self.driver.execute_script(
-    #         #     "document.querySelectorAll('[class*="cookie"],[id*="cookie"]').forEach(e => e.remove();"
-    #         # )
-    #         self.driver.execute_script(
-    #             'document.querySelectorAll("[class*=\\"cookie\\"],[id*=\\"cookie\\"]").forEach(e => e.remove());'
-    #         )
-
-    #         logger.info("Cookie-Banner per JS entfernt")
-    #         return True
-    #     except Exception as e:
-    #         logger.warning(f"JS-Fallback fehlgeschlagen: {e}")
-    #         return False
-
 
     def wait_for_element(self, locator_type, locator_value, timeout=10):
         """Auf Element warten"""
@@ -393,8 +223,6 @@ Log notice stdout
             self.evade_bot_detection()
 
             logger.info(f"Website geladen: {url}")
-
-            # time.sleep(20)
             
             self.dismiss_cookie_banner()
             
@@ -469,6 +297,8 @@ Log notice stdout
     
     def run_test_loop(self, max_attempts=None, delay_between_attempts=5):
         """Haupttest-Loop"""
+        start_time = time.time()
+
         if max_attempts is None:
             logger.info("Starte unbegrenzten Test-Loop")
         else:
@@ -496,16 +326,16 @@ Log notice stdout
                 success = self.perform_test_sequence()
                 
                 # Statistiken ausgeben
+                elapsed_minutes = (time.time() - start_time) / 60
+                if elapsed_minutes > 0:
+                    success_per_minute = self.successful_attempts / elapsed_minutes
+                    logger.info(f"Erfolgsrate pro Minute: {success_per_minute:.2f}")
+
                 success_rate = (self.successful_attempts / self.total_attempts) * 100
                 logger.info(f"Erfolgreiche Versuche: {self.successful_attempts}")
                 logger.info(f"Fehlgeschlagene Versuche: {self.failed_attempts}")
                 logger.info(f"Erfolgsrate: {success_rate:.1f}%")
                 
-                # Pause zwischen Versuchen
-                # if max_attempts is None or attempt < max_attempts:
-                #     logger.info(f"Warte {delay_between_attempts} Sekunden...")
-                #     time.sleep(delay_between_attempts)
-        
         except KeyboardInterrupt:
             logger.info("Test durch Benutzer abgebrochen")
         
@@ -558,11 +388,9 @@ def main():
     print("   tor -f /tmp/torrc_german_exits")
     print()
     
-    # Tester erstellen und starten
     tester = TorBotTester(tor_path, geckodriver_path)
     
     try:
-        # Test-Parameter
         # max_input = input("Maximale Anzahl Versuche (leer für unbegrenzt, Standard: 50): ").strip()
         max_input = ""
         

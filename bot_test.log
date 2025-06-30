@@ -3369,3 +3369,111 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 2025-06-30 22:01:52,396 - INFO - Erfolgreiche Versuche: 0
 2025-06-30 22:01:52,396 - INFO - Fehlgeschlagene Versuche: 0
 2025-06-30 22:01:52,396 - INFO - Erfolgsrate: 0.0%
+2025-06-30 22:07:37,409 - INFO - Starte unbegrenzten Test-Loop
+2025-06-30 22:07:38,951 - WARNING - Konnte Tor-Identität nicht erneuern: Command 'curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/' returned non-zero exit status 7.
+2025-06-30 22:07:40,520 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 22:07:40,520 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 22:07:40,520 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-06-30 22:07:40,520 - INFO - Versuch #1 gestartet
+2025-06-30 22:07:40,664 - ERROR - Fehler in Testsequenz: Message: Reached error page: about:neterror?e=proxyConnectFailure&u=https%3A//www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf&c=UTF-8&d=Firefox%20wurde%20konfiguriert%2C%20einen%20Proxy-Server%20zu%20nutzen%2C%20der%20die%20Verbindung%20zur%C3%BCckweist.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:910:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:58:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:347:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+
+2025-06-30 22:07:40,665 - INFO - Erfolgsrate pro Minute: 0.00
+2025-06-30 22:07:40,665 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 22:07:40,665 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 22:07:40,665 - INFO - Erfolgsrate: 0.0%
+2025-06-30 22:07:40,665 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-06-30 22:07:43,170 - WARNING - Konnte Tor-Identität nicht erneuern: Command 'curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/' returned non-zero exit status 7.
+2025-06-30 22:07:44,632 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 22:07:44,632 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 22:07:44,633 - INFO - Versuch #2 gestartet
+2025-06-30 22:07:44,790 - ERROR - Fehler in Testsequenz: Message: Reached error page: about:neterror?e=proxyConnectFailure&u=https%3A//www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf&c=UTF-8&d=Firefox%20wurde%20konfiguriert%2C%20einen%20Proxy-Server%20zu%20nutzen%2C%20der%20die%20Verbindung%20zur%C3%BCckweist.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:910:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:58:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:347:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+
+2025-06-30 22:07:44,790 - INFO - Erfolgsrate pro Minute: 0.00
+2025-06-30 22:07:44,790 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 22:07:44,790 - INFO - Fehlgeschlagene Versuche: 2
+2025-06-30 22:07:44,790 - INFO - Erfolgsrate: 0.0%
+2025-06-30 22:07:44,790 - INFO - 
+--- Durchlauf 3 (unbegrenzt) ---
+2025-06-30 22:07:47,295 - WARNING - Konnte Tor-Identität nicht erneuern: Command 'curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/' returned non-zero exit status 7.
+2025-06-30 22:07:48,732 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 22:07:48,732 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 22:07:48,732 - INFO - Versuch #3 gestartet
+2025-06-30 22:07:48,873 - ERROR - Fehler in Testsequenz: Message: Reached error page: about:neterror?e=proxyConnectFailure&u=https%3A//www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf&c=UTF-8&d=Firefox%20wurde%20konfiguriert%2C%20einen%20Proxy-Server%20zu%20nutzen%2C%20der%20die%20Verbindung%20zur%C3%BCckweist.
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:910:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:58:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:347:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+
+2025-06-30 22:07:48,873 - INFO - Erfolgsrate pro Minute: 0.00
+2025-06-30 22:07:48,873 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 22:07:48,873 - INFO - Fehlgeschlagene Versuche: 3
+2025-06-30 22:07:48,873 - INFO - Erfolgsrate: 0.0%
+2025-06-30 22:07:48,873 - INFO - 
+--- Durchlauf 4 (unbegrenzt) ---
+2025-06-30 22:07:52,166 - INFO - Neue Tor-IP: 194.15.36.117
+2025-06-30 22:07:53,644 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 22:07:53,644 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 22:07:53,644 - INFO - Versuch #4 gestartet
+2025-06-30 22:07:55,228 - INFO - Zoom auf 30% gesetzt
+2025-06-30 22:07:55,230 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 22:07:55,230 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 22:07:55,246 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 22:07:56,274 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 22:08:00,363 - WARNING - Element nicht gefunden: voteIntendButton (Timeout: 4s)
+2025-06-30 22:08:00,363 - ERROR - Schritt 1 fehlgeschlagen: voteIntendButton nicht gefunden
+2025-06-30 22:08:00,363 - INFO - Erfolgsrate pro Minute: 0.00
+2025-06-30 22:08:00,363 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 22:08:00,364 - INFO - Fehlgeschlagene Versuche: 3
+2025-06-30 22:08:00,364 - INFO - Erfolgsrate: 0.0%
+2025-06-30 22:08:00,364 - INFO - 
+--- Durchlauf 5 (unbegrenzt) ---
+2025-06-30 22:08:03,120 - INFO - Neue Tor-IP: 185.220.101.145
+2025-06-30 22:08:04,646 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 22:08:04,646 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 22:08:04,646 - INFO - Versuch #5 gestartet
+2025-06-30 22:08:07,797 - INFO - Zoom auf 30% gesetzt
+2025-06-30 22:08:07,798 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 22:08:07,798 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 22:08:07,884 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 22:08:08,902 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 22:08:13,031 - WARNING - Element nicht gefunden: voteIntendButton (Timeout: 4s)
+2025-06-30 22:08:13,032 - ERROR - Schritt 1 fehlgeschlagen: voteIntendButton nicht gefunden
+2025-06-30 22:08:13,032 - INFO - Erfolgsrate pro Minute: 0.00
+2025-06-30 22:08:13,032 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 22:08:13,032 - INFO - Fehlgeschlagene Versuche: 3
+2025-06-30 22:08:13,032 - INFO - Erfolgsrate: 0.0%
+2025-06-30 22:08:13,032 - INFO - 
+--- Durchlauf 6 (unbegrenzt) ---
+2025-06-30 22:08:15,285 - INFO - Test durch Benutzer abgebrochen
+2025-06-30 22:08:15,288 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10476a9f0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/385f2ac5-a212-48bc-b820-55ba95619c0e
+2025-06-30 22:08:15,290 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10476aa80>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/385f2ac5-a212-48bc-b820-55ba95619c0e
+2025-06-30 22:08:15,291 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10476a540>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/385f2ac5-a212-48bc-b820-55ba95619c0e
+2025-06-30 22:08:15,292 - INFO - Browser geschlossen
+2025-06-30 22:08:15,292 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-06-30 22:08:15,292 - INFO - Gesamte Versuche: 5
+2025-06-30 22:08:15,292 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 22:08:15,292 - INFO - Fehlgeschlagene Versuche: 3
+2025-06-30 22:08:15,292 - INFO - Erfolgsrate: 0.0%
