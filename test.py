@@ -93,35 +93,48 @@ class TorBotTester:
             logger.error(f"Fehler beim Starten des Tor Browsers: {e}")
             return False
     
-    def configure_tor_for_german_exits(self):
-        """Tor für deutsche Exit-Knoten konfigurieren"""
-        try:
-            # import stem.control
+    # def configure_tor_for_german_exits(self):
+    #     """Tor für deutsche Exit-Knoten konfigurieren"""
+    #     try:
+    #         # import stem.control
             
-            # with stem.control.Controller.from_port(port=9051) as controller:
-            #     controller.authenticate()
+    #         # with stem.control.Controller.from_port(port=9051) as controller:
+    #         #     controller.authenticate()
 
-            subprocess.run(["(echo authenticate '""'; echo signal newnym; echo quit) | nc localhost 9051"])
-            time.sleep(2)
-            # self.restart_browser()
+    #         subprocess.run(["(echo authenticate '""'; echo signal newnym; echo quit) | nc localhost 9051"])
+    #         time.sleep(2)
+    #         # self.restart_browser()
 
-            # subprocess.run(["curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/"])
+    #         # subprocess.run(["curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/"])
                 
-                # Deutsche Exit-Knoten erzwingen
-                # controller.set_conf("ExitNodes", "{de}")
-                # controller.set_conf("StrictNodes", "1")
+    #             # Deutsche Exit-Knoten erzwingen
+    #             # controller.set_conf("ExitNodes", "{de}")
+    #             # controller.set_conf("StrictNodes", "1")
                 
-                # # Neue Identität für sofortige Anwendung
-                # controller.signal(stem.Signal.NEWNYM)
-            # logger.info(f"Neue IP: {ip}")
+    #             # # Neue Identität für sofortige Anwendung
+    #             # controller.signal(stem.Signal.NEWNYM)
+    #         # logger.info(f"Neue IP: {ip}")
                 
-                # logger.info("Tor für deutsche Exit-Knoten konfiguriert")
-            time.sleep(1)  # Warten bis Konfiguration aktiv
+    #             # logger.info("Tor für deutsche Exit-Knoten konfiguriert")
+    #         time.sleep(1)  # Warten bis Konfiguration aktiv
                 
+    #     except Exception as e:
+    #         logger.warning(f"Konnte Tor-Konfiguration nicht setzen: {e}")
+    #         logger.info("Fallback: Versuche über torrc-Datei zu konfigurieren")
+    #         self.create_custom_torrc()
+
+    def configure_tor_for_german_exits(self):
+        """Tor für deutsche Exit-Knoten konfigurieren und neue IP anzeigen"""
+        try:
+            subprocess.run("echo authenticate '' | nc localhost 9051 && echo signal newnym | nc localhost 9051 && echo quit | nc localhost 9051", shell=True)
+            time.sleep(1.5)
+            ip = subprocess.check_output(
+                "curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/", shell=True
+            ).decode().strip()
+            logger.info(f"Neue Tor-IP: {ip}")
         except Exception as e:
-            logger.warning(f"Konnte Tor-Konfiguration nicht setzen: {e}")
-            logger.info("Fallback: Versuche über torrc-Datei zu konfigurieren")
-            self.create_custom_torrc()
+            logger.warning(f"Konnte Tor-Identität nicht erneuern: {e}")
+
     
     def create_custom_torrc(self):
         """Erstelle temporäre torrc mit deutschen Exit-Knoten"""
@@ -229,56 +242,72 @@ Log notice stdout
         """Browser neu starten"""
         if self.driver:
             self.driver.quit()
-        time.sleep(2)
+        time.sleep(0.5)
         self.setup_tor_browser()
 
-    def dismiss_cookie_banner(self):
-        print("IN COOKIE FUNC")
-        """Cookie-Banner wegklicken, wenn vorhanden"""
-        try:
+    # def dismiss_cookie_banner(self):
+    #     print("IN COOKIE FUNC")
+    #     """Cookie-Banner wegklicken, wenn vorhanden"""
+    #     try:
 
-            cookie_button = self.wait_for_element("xpath", "//button[contains(text(), 'Akzeptieren') or contains(text(), 'Alle akzeptieren')]", 1)
-            if cookie_button:
-                cookie_button.click()
-                logger.info("Cookie-Banner geschlossen")
-            # cookie_button = self.driver.find_element(By.XPATH, "/div/div/d^^[2]/div/div[2]/div/div[2]/div/div[1]/div/div/button[3]")
-            # cookie_button.click()
-            # cookie_button = self.driver.find_element(By.XPATH, "/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/button[3]")
-            # cookie_button.click()
-            # logger.info("Cookie-Banner geschlossen.")
-            time.sleep(1)  # etwas warten nach dem Klick
-        except NoSuchElementException:
-            print("No such element")
-        except Exception as e:
-            logger.warning(f"Fehler beim Schließen des Cookie-Banners: {e}")
+    #         cookie_button = self.wait_for_element("xpath", "//button[contains(text(), 'Akzeptieren') or contains(text(), 'Alle akzeptieren')]", 1)
+    #         if cookie_button:
+    #             cookie_button.click()
+    #             logger.info("Cookie-Banner geschlossen")
+    #         # cookie_button = self.driver.find_element(By.XPATH, "/div/div/d^^[2]/div/div[2]/div/div[2]/div/div[1]/div/div/button[3]")
+    #         # cookie_button.click()
+    #         # cookie_button = self.driver.find_element(By.XPATH, "/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/button[3]")
+    #         # cookie_button.click()
+    #         # logger.info("Cookie-Banner geschlossen.")
+    #         time.sleep(1)  # etwas warten nach dem Klick
+    #     except NoSuchElementException:
+    #         print("No such element")
+    #     except Exception as e:
+    #         logger.warning(f"Fehler beim Schließen des Cookie-Banners: {e}")
         
-        time.sleep(0.5)
+    #     time.sleep(0.5)
+
+    def dismiss_cookie_banner(self):
+        """Cookie-Banner wegklicken, wenn vorhanden - ohne Wartezeiten"""
+        xpaths = [
+            "//button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]",
+            "//button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'ablehnen')]",
+            "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/button[3]"
+            "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/div/button[2]"
+        ]
+        for path in xpaths:
+            try:
+                btn = self.driver.find_element(By.XPATH, path)
+                if btn and btn.is_displayed() and btn.is_enabled():
+                    btn.click()
+                    logger.info("Cookie-Banner geschlossen mit XPath: %s", path)
+                    time.sleep(0.25)
+                    return
+            except NoSuchElementException:
+                continue
+        logger.info("Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.")
+
 
     def wait_for_element(self, locator_type, locator_value, timeout=10):
         """Auf Element warten"""
         try:
             wait = WebDriverWait(self.driver, timeout)
-            if locator_type == "xpath":
-                element = wait.until(EC.element_to_be_clickable((By.XPATH, locator_value)))
-            elif locator_type == "id":
-                element = wait.until(EC.element_to_be_clickable((By.ID, locator_value)))
-            return element
+            by = By.XPATH if locator_type == 'xpath' else By.ID
+            return wait.until(EC.element_to_be_clickable((by, locator_value)))
         except TimeoutException:
             logger.warning(f"Element nicht gefunden: {locator_value} (Timeout: {timeout}s)")
             return None
-    
+
     def click_element(self, locator_type, locator_value, timeout=10):
         """Element klicken"""
-        try:
-            element = self.wait_for_element(locator_type, locator_value, timeout)
-            if element:
-                element.click()
-                logger.info(f"Element geklickt: {locator_value}")
-                return True
-            return False
-        except Exception as e:
-            logger.error(f"Fehler beim Klicken: {e}")
-            return False
+        element = self.wait_for_element(locator_type, locator_value, timeout)
+        if element:
+            element.click()
+            logger.info(f"Element geklickt: {locator_value}")
+            time.sleep(0.25)
+            return True
+        return False
+
     
     def check_error_message(self):
         """Prüfen ob Fehlermeldung angezeigt wird"""
@@ -328,12 +357,12 @@ Log notice stdout
             self.dismiss_cookie_banner()
             
             # Seite vollständig laden lassen
-            time.sleep(3)
+            time.sleep(1)
 
             self.dismiss_cookie_banner()
             
             # 2. Ersten Button klicken (voteIntendButton)
-            if not self.click_element("id", "voteIntendButton", 15):
+            if not self.click_element("id", "voteIntendButton", 4):
                 logger.error("Schritt 1 fehlgeschlagen: voteIntendButton nicht gefunden")
                 return False
             
@@ -345,9 +374,9 @@ Log notice stdout
             self.dismiss_cookie_banner()
             
             # 3. Zweiten Button klicken
-            if not self.click_element("xpath", "/html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button", 10):
+            if not self.click_element("xpath", "/html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button", 2):
                 logger.error("Schritt 2 fehlgeschlagen: Zweiter Button nicht gefunden")
-                return False
+                # return False
 
             self.dismiss_cookie_banner()
             
@@ -357,7 +386,7 @@ Log notice stdout
             self.dismiss_cookie_banner()
             
             # 4. Dritten Button klicken
-            if not self.click_element("xpath", "/html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button", 10):
+            if not self.click_element("xpath", "/html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button", 4):
                 logger.error("Schritt 3 fehlgeschlagen: Dritter Button nicht gefunden")
                 return False
 
@@ -369,17 +398,15 @@ Log notice stdout
             self.dismiss_cookie_banner()
             
             # 5. Voting Button klicken
-            if not self.click_element("id", "votingButton", 10):
+            if not self.click_element("id", "votingButton", 4):
                 logger.error("Schritt 4 fehlgeschlagen: votingButton nicht gefunden")
                 return False
 
             self.dismiss_cookie_banner()
             
             # Warten auf Antwort
-            time.sleep(3)
+            time.sleep(1.5)
 
-            self.dismiss_cookie_banner()
-            
             # 6. Auf Fehler prüfen
             if self.check_error_message():
                 logger.warning("Fehler-Meldung erkannt - Versuch nicht gezählt")
@@ -494,7 +521,8 @@ def main():
     
     try:
         # Test-Parameter
-        max_input = input("Maximale Anzahl Versuche (leer für unbegrenzt, Standard: 50): ").strip()
+        # max_input = input("Maximale Anzahl Versuche (leer für unbegrenzt, Standard: 50): ").strip()
+        max_input = ""
         
         if max_input == "":
             max_attempts = None  # Unbegrenzt
@@ -508,7 +536,8 @@ def main():
             except ValueError:
                 max_attempts = 50  # Fallback
                 
-        delay = int(input("Pause zwischen Versuchen in Sekunden (Standard: 10): ") or "10")
+        # delay = int(input("Pause zwischen Versuchen in Sekunden (Standard: 10): ") or "10")
+        delay = 10
         
         tester.run_test_loop(max_attempts, delay)
         

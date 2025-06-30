@@ -2320,3 +2320,690 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 2025-06-30 21:17:20,934 - INFO - Erfolgreiche Versuche: 0
 2025-06-30 21:17:20,934 - INFO - Fehlgeschlagene Versuche: 0
 2025-06-30 21:17:20,934 - INFO - Erfolgsrate: 0.0%
+2025-06-30 21:26:22,956 - INFO - Starte unbegrenzten Test-Loop
+2025-06-30 21:26:25,170 - INFO - Neue Tor-IP: 5.253.247.27
+2025-06-30 21:26:26,774 - INFO - Zoom-Faktor auf 30% gesetzt, um Vollsichtbarkeit zu gewährleisten
+2025-06-30 21:26:26,774 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:26:26,774 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-06-30 21:26:26,774 - INFO - Versuch #1 gestartet
+2025-06-30 21:26:28,443 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:26:28,458 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:26:28,458 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:26:38,667 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:26:51,874 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:26:52,118 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:26:53,356 - INFO - Cookie-Banner geschlossen mit XPath: //button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]
+2025-06-30 21:27:06,633 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:27:17,039 - WARNING - Element nicht gefunden: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button (Timeout: 10s)
+2025-06-30 21:27:17,040 - ERROR - Schritt 2 fehlgeschlagen: Zweiter Button nicht gefunden
+2025-06-30 21:27:17,040 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 21:27:17,040 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:27:17,040 - INFO - Erfolgsrate: 0.0%
+2025-06-30 21:27:17,040 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-06-30 21:27:17,474 - INFO - Browser geschlossen
+2025-06-30 21:27:17,474 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-06-30 21:27:17,474 - INFO - Gesamte Versuche: 1
+2025-06-30 21:27:17,474 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 21:27:17,474 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:27:17,474 - INFO - Erfolgsrate: 0.0%
+2025-06-30 21:30:04,710 - INFO - Starte unbegrenzten Test-Loop
+2025-06-30 21:30:06,942 - INFO - Neue Tor-IP: 176.65.149.87
+2025-06-30 21:30:08,345 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:30:08,345 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:30:08,345 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-06-30 21:30:08,345 - INFO - Versuch #1 gestartet
+2025-06-30 21:30:09,747 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:30:09,749 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:30:09,749 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:30:09,763 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:30:12,779 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:30:13,024 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:30:14,044 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:30:16,388 - INFO - Cookie-Banner geschlossen mit XPath: //button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]
+2025-06-30 21:30:27,722 - WARNING - Element nicht gefunden: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button (Timeout: 10s)
+2025-06-30 21:30:27,723 - ERROR - Schritt 2 fehlgeschlagen: Zweiter Button nicht gefunden
+2025-06-30 21:30:27,723 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 21:30:27,723 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:30:27,723 - INFO - Erfolgsrate: 0.0%
+2025-06-30 21:30:27,723 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-06-30 21:30:32,458 - INFO - Neue Tor-IP: 185.183.157.214
+2025-06-30 21:30:33,758 - INFO - Test durch Benutzer abgebrochen
+2025-06-30 21:30:33,767 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1026aa6f0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/e3271e1a-f984-4ea0-bfe1-25202cb33d90
+2025-06-30 21:30:33,768 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1026aa420>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/e3271e1a-f984-4ea0-bfe1-25202cb33d90
+2025-06-30 21:30:33,769 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1026aa1b0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/e3271e1a-f984-4ea0-bfe1-25202cb33d90
+2025-06-30 21:30:33,769 - INFO - Browser geschlossen
+2025-06-30 21:30:33,769 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-06-30 21:30:33,769 - INFO - Gesamte Versuche: 1
+2025-06-30 21:30:33,769 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 21:30:33,769 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:30:33,769 - INFO - Erfolgsrate: 0.0%
+2025-06-30 21:32:48,233 - INFO - Starte unbegrenzten Test-Loop
+2025-06-30 21:32:50,551 - INFO - Neue Tor-IP: 185.183.157.214
+2025-06-30 21:32:52,069 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:32:52,069 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:32:52,069 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-06-30 21:32:52,069 - INFO - Versuch #1 gestartet
+2025-06-30 21:32:54,807 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:32:54,808 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:32:54,808 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:32:54,825 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:32:57,842 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:32:58,088 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:32:59,332 - INFO - Cookie-Banner geschlossen mit XPath: //button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]
+2025-06-30 21:33:02,359 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:12,713 - WARNING - Element nicht gefunden: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button (Timeout: 10s)
+2025-06-30 21:33:12,715 - ERROR - Schritt 2 fehlgeschlagen: Zweiter Button nicht gefunden
+2025-06-30 21:33:12,735 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:14,773 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:14,794 - ERROR - Fehler in Testsequenz: Message: Element <button class="frc-button c-button" type="button"> is not clickable at point (643,252) because another element <div id="usercentrics-root"> obscures it; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-06-30 21:33:14,794 - INFO - Erfolgreiche Versuche: 0
+2025-06-30 21:33:14,794 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:33:14,794 - INFO - Erfolgsrate: 0.0%
+2025-06-30 21:33:14,794 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-06-30 21:33:19,610 - INFO - Neue Tor-IP: 185.220.101.36
+2025-06-30 21:33:21,173 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:33:21,173 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:33:21,173 - INFO - Versuch #2 gestartet
+2025-06-30 21:33:22,768 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:33:22,792 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:33:22,792 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:33:22,797 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:25,812 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:26,058 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:33:27,075 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:29,320 - INFO - Cookie-Banner geschlossen mit XPath: //button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]
+2025-06-30 21:33:40,679 - WARNING - Element nicht gefunden: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button (Timeout: 10s)
+2025-06-30 21:33:40,679 - ERROR - Schritt 2 fehlgeschlagen: Zweiter Button nicht gefunden
+2025-06-30 21:33:40,690 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:42,708 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:42,941 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:33:43,952 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:45,973 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:46,199 - INFO - Element geklickt: votingButton
+2025-06-30 21:33:47,214 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:50,227 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:50,241 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:33:50,241 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:33:50,241 - INFO - Erfolgreiche Versuche: 1
+2025-06-30 21:33:50,241 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:33:50,241 - INFO - Erfolgsrate: 50.0%
+2025-06-30 21:33:50,241 - INFO - 
+--- Durchlauf 3 (unbegrenzt) ---
+2025-06-30 21:33:53,808 - INFO - Test durch Benutzer abgebrochen
+2025-06-30 21:33:53,809 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1020eed80>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdab193f-ead0-4d3b-8703-029fcec70c22
+2025-06-30 21:33:53,810 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1020ef350>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdab193f-ead0-4d3b-8703-029fcec70c22
+2025-06-30 21:33:53,811 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1020eeed0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/fdab193f-ead0-4d3b-8703-029fcec70c22
+2025-06-30 21:33:53,812 - INFO - Browser geschlossen
+2025-06-30 21:33:53,812 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-06-30 21:33:53,812 - INFO - Gesamte Versuche: 2
+2025-06-30 21:33:53,812 - INFO - Erfolgreiche Versuche: 1
+2025-06-30 21:33:53,812 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:33:53,812 - INFO - Erfolgsrate: 50.0%
+2025-06-30 21:35:08,690 - INFO - Starte unbegrenzten Test-Loop
+2025-06-30 21:35:10,938 - INFO - Neue Tor-IP: 185.220.100.246
+2025-06-30 21:35:12,475 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:35:12,475 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:35:12,475 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-06-30 21:35:12,475 - INFO - Versuch #1 gestartet
+2025-06-30 21:35:18,380 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:35:18,392 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:35:18,392 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:35:18,397 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:21,413 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:21,653 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:35:22,672 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:24,911 - INFO - Cookie-Banner geschlossen mit XPath: //button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]
+2025-06-30 21:35:36,272 - WARNING - Element nicht gefunden: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button (Timeout: 10s)
+2025-06-30 21:35:36,273 - ERROR - Schritt 2 fehlgeschlagen: Zweiter Button nicht gefunden
+2025-06-30 21:35:36,280 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:38,300 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:38,523 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:35:39,533 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:41,550 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:41,779 - INFO - Element geklickt: votingButton
+2025-06-30 21:35:42,786 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:45,795 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:45,811 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:45,811 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:35:45,811 - INFO - Erfolgreiche Versuche: 1
+2025-06-30 21:35:45,811 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:35:45,811 - INFO - Erfolgsrate: 100.0%
+2025-06-30 21:35:45,811 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-06-30 21:35:50,491 - INFO - Neue Tor-IP: 185.220.101.148
+2025-06-30 21:35:51,987 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:35:51,987 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:35:51,987 - INFO - Versuch #2 gestartet
+2025-06-30 21:35:53,218 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:35:53,220 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:35:53,220 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:35:53,224 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:56,236 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:35:56,256 - ERROR - Fehler in Testsequenz: Message: Element <button id="voteIntendButton" class="c-button c-button--large c-button--centered u-extra-small-margin--top " type="submit"> is not clickable at point (567,299) because another element <div id="usercentrics-root"> obscures it; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-06-30 21:35:56,256 - INFO - Erfolgreiche Versuche: 1
+2025-06-30 21:35:56,256 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:35:56,256 - INFO - Erfolgsrate: 50.0%
+2025-06-30 21:35:56,256 - INFO - 
+--- Durchlauf 3 (unbegrenzt) ---
+2025-06-30 21:35:59,255 - INFO - Test durch Benutzer abgebrochen
+2025-06-30 21:35:59,258 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101f7acc0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/33658983-2612-45cb-8ffd-73af2386b4d1
+2025-06-30 21:35:59,260 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101f7acf0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/33658983-2612-45cb-8ffd-73af2386b4d1
+2025-06-30 21:35:59,260 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x101f7ad20>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/33658983-2612-45cb-8ffd-73af2386b4d1
+2025-06-30 21:35:59,262 - INFO - Browser geschlossen
+2025-06-30 21:35:59,262 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-06-30 21:35:59,262 - INFO - Gesamte Versuche: 2
+2025-06-30 21:35:59,262 - INFO - Erfolgreiche Versuche: 1
+2025-06-30 21:35:59,262 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:35:59,262 - INFO - Erfolgsrate: 50.0%
+2025-06-30 21:38:49,820 - INFO - Starte unbegrenzten Test-Loop
+2025-06-30 21:38:52,332 - INFO - Neue Tor-IP: 185.220.100.243
+2025-06-30 21:38:53,901 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:38:53,901 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:38:53,901 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-06-30 21:38:53,901 - INFO - Versuch #1 gestartet
+2025-06-30 21:38:55,137 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:38:55,139 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:38:55,139 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:38:55,145 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:38:58,165 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:38:58,408 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:38:59,424 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:01,845 - INFO - Cookie-Banner geschlossen mit XPath: //button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]
+2025-06-30 21:39:13,203 - WARNING - Element nicht gefunden: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button (Timeout: 10s)
+2025-06-30 21:39:13,203 - ERROR - Schritt 2 fehlgeschlagen: Zweiter Button nicht gefunden
+2025-06-30 21:39:13,213 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:15,231 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:15,454 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:39:16,467 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:18,481 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:18,707 - INFO - Element geklickt: votingButton
+2025-06-30 21:39:19,720 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:22,734 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:22,749 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:22,749 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:39:22,749 - INFO - Erfolgreiche Versuche: 1
+2025-06-30 21:39:22,750 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:39:22,750 - INFO - Erfolgsrate: 100.0%
+2025-06-30 21:39:22,750 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-06-30 21:39:27,460 - INFO - Neue Tor-IP: 194.15.36.117
+2025-06-30 21:39:29,006 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:39:29,006 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:39:29,006 - INFO - Versuch #2 gestartet
+2025-06-30 21:39:30,295 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:39:30,298 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:39:30,298 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:39:30,304 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:33,317 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:33,558 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:39:34,576 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:36,947 - INFO - Cookie-Banner geschlossen mit XPath: //button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]
+2025-06-30 21:39:48,404 - WARNING - Element nicht gefunden: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button (Timeout: 10s)
+2025-06-30 21:39:48,404 - ERROR - Schritt 2 fehlgeschlagen: Zweiter Button nicht gefunden
+2025-06-30 21:39:48,411 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:50,434 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:50,672 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:39:51,681 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:53,696 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:53,921 - INFO - Element geklickt: votingButton
+2025-06-30 21:39:54,935 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:57,953 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:57,963 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:39:57,963 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:39:57,963 - INFO - Erfolgreiche Versuche: 2
+2025-06-30 21:39:57,963 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:39:57,963 - INFO - Erfolgsrate: 100.0%
+2025-06-30 21:39:57,963 - INFO - 
+--- Durchlauf 3 (unbegrenzt) ---
+2025-06-30 21:40:02,782 - INFO - Neue Tor-IP: 185.220.100.247
+2025-06-30 21:40:04,316 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:40:04,317 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:40:04,317 - INFO - Versuch #3 gestartet
+2025-06-30 21:40:06,315 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:40:06,318 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:40:06,318 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:40:06,338 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:40:09,352 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:40:09,593 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:40:10,610 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:40:12,855 - INFO - Cookie-Banner geschlossen mit XPath: //button[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'akzeptieren')]
+2025-06-30 21:40:19,358 - INFO - Test durch Benutzer abgebrochen
+2025-06-30 21:40:19,367 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x102eef410>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/1e3a2e87-ad5d-4803-8210-be4121b491f4
+2025-06-30 21:40:19,369 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x102eef8c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/1e3a2e87-ad5d-4803-8210-be4121b491f4
+2025-06-30 21:40:19,369 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x102eef830>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/1e3a2e87-ad5d-4803-8210-be4121b491f4
+2025-06-30 21:40:19,371 - INFO - Browser geschlossen
+2025-06-30 21:40:19,371 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-06-30 21:40:19,371 - INFO - Gesamte Versuche: 3
+2025-06-30 21:40:19,371 - INFO - Erfolgreiche Versuche: 2
+2025-06-30 21:40:19,371 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:40:19,371 - INFO - Erfolgsrate: 66.7%
+2025-06-30 21:42:15,276 - INFO - Starte unbegrenzten Test-Loop
+2025-06-30 21:42:17,118 - INFO - Neue Tor-IP: 185.220.101.45
+2025-06-30 21:42:18,692 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:42:18,692 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:42:18,692 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-06-30 21:42:18,692 - INFO - Versuch #1 gestartet
+2025-06-30 21:42:21,615 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:42:21,641 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:42:21,641 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:42:21,645 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:22,652 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:22,883 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:42:23,147 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:25,157 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:25,891 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:42:26,253 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:28,271 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:28,498 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:42:28,762 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:30,774 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:30,992 - INFO - Element geklickt: votingButton
+2025-06-30 21:42:31,255 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:32,768 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:32,768 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:42:32,768 - INFO - Erfolgreiche Versuche: 1
+2025-06-30 21:42:32,768 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:42:32,768 - INFO - Erfolgsrate: 100.0%
+2025-06-30 21:42:32,768 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-06-30 21:42:35,452 - INFO - Neue Tor-IP: 185.220.100.251
+2025-06-30 21:42:36,993 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:42:36,993 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:42:36,993 - INFO - Versuch #2 gestartet
+2025-06-30 21:42:38,787 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:42:38,790 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:42:38,791 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:42:38,842 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:39,852 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:40,086 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:42:40,353 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:42,382 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:43,660 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:42:43,920 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:45,950 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:46,171 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:42:46,452 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:48,474 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:48,708 - INFO - Element geklickt: votingButton
+2025-06-30 21:42:48,977 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:50,496 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:50,497 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:42:50,497 - INFO - Erfolgreiche Versuche: 2
+2025-06-30 21:42:50,497 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:42:50,497 - INFO - Erfolgsrate: 100.0%
+2025-06-30 21:42:50,497 - INFO - 
+--- Durchlauf 3 (unbegrenzt) ---
+2025-06-30 21:42:53,239 - INFO - Neue Tor-IP: 185.207.107.130
+2025-06-30 21:42:54,779 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:42:54,779 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:42:54,779 - INFO - Versuch #3 gestartet
+2025-06-30 21:42:56,062 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:42:56,063 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:42:56,064 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:42:56,081 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:57,092 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:57,350 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:42:57,613 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:42:59,631 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:01,205 - ERROR - Fehler in Testsequenz: Message: Element <button class="c-embed__optinbutton c-button has-clickhandler" type="button"> is not clickable at point (622,309) because another element <div id="usercentrics-root"> obscures it; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-06-30 21:43:01,206 - INFO - Erfolgreiche Versuche: 2
+2025-06-30 21:43:01,206 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:43:01,206 - INFO - Erfolgsrate: 66.7%
+2025-06-30 21:43:01,206 - INFO - 
+--- Durchlauf 4 (unbegrenzt) ---
+2025-06-30 21:43:03,951 - INFO - Neue Tor-IP: 185.220.100.243
+2025-06-30 21:43:05,433 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:43:05,433 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:43:05,433 - INFO - Versuch #4 gestartet
+2025-06-30 21:43:06,783 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:43:06,808 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:43:06,808 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:43:06,813 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:07,865 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:08,099 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:43:08,362 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:10,372 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:11,635 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:43:11,896 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:13,909 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:14,132 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:43:14,401 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:16,422 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:16,650 - INFO - Element geklickt: votingButton
+2025-06-30 21:43:16,921 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:18,447 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:18,447 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:43:18,447 - INFO - Erfolgreiche Versuche: 3
+2025-06-30 21:43:18,447 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:43:18,447 - INFO - Erfolgsrate: 75.0%
+2025-06-30 21:43:18,447 - INFO - 
+--- Durchlauf 5 (unbegrenzt) ---
+2025-06-30 21:43:21,214 - INFO - Neue Tor-IP: 185.220.101.109
+2025-06-30 21:43:22,713 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:43:22,713 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:43:22,713 - INFO - Versuch #5 gestartet
+2025-06-30 21:43:24,446 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:43:24,449 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:43:24,449 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:43:24,453 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:25,469 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:25,715 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:43:25,976 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:27,987 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:29,759 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:43:30,021 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:32,045 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:32,276 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:43:32,547 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:34,571 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:34,801 - INFO - Element geklickt: votingButton
+2025-06-30 21:43:35,061 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:36,584 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:36,584 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:43:36,584 - INFO - Erfolgreiche Versuche: 4
+2025-06-30 21:43:36,584 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:43:36,584 - INFO - Erfolgsrate: 80.0%
+2025-06-30 21:43:36,584 - INFO - 
+--- Durchlauf 6 (unbegrenzt) ---
+2025-06-30 21:43:39,301 - INFO - Neue Tor-IP: 87.118.116.12
+2025-06-30 21:43:40,844 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:43:40,844 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:43:40,844 - INFO - Versuch #6 gestartet
+2025-06-30 21:43:42,154 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:43:42,156 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:43:42,156 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:43:42,160 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:43,168 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:43,399 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:43:43,661 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:45,686 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:46,728 - ERROR - Fehler in Testsequenz: Message: Element <button class="c-embed__optinbutton c-button has-clickhandler" type="button"> is not clickable at point (622,309) because another element <div id="usercentrics-root"> obscures it; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-06-30 21:43:46,728 - INFO - Erfolgreiche Versuche: 4
+2025-06-30 21:43:46,728 - INFO - Fehlgeschlagene Versuche: 2
+2025-06-30 21:43:46,728 - INFO - Erfolgsrate: 66.7%
+2025-06-30 21:43:46,728 - INFO - 
+--- Durchlauf 7 (unbegrenzt) ---
+2025-06-30 21:43:49,495 - INFO - Neue Tor-IP: 188.68.52.231
+2025-06-30 21:43:51,027 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:43:51,027 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:43:51,027 - INFO - Versuch #7 gestartet
+2025-06-30 21:43:52,629 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:43:52,645 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:43:52,645 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:43:52,650 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:53,661 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:53,895 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:43:54,157 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:56,170 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:43:57,214 - ERROR - Fehler in Testsequenz: Message: Element <button class="c-embed__optinbutton c-button has-clickhandler" type="button"> is not clickable at point (622,309) because another element <div id="usercentrics-root"> obscures it; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-06-30 21:43:57,214 - INFO - Erfolgreiche Versuche: 4
+2025-06-30 21:43:57,214 - INFO - Fehlgeschlagene Versuche: 3
+2025-06-30 21:43:57,214 - INFO - Erfolgsrate: 57.1%
+2025-06-30 21:43:57,214 - INFO - 
+--- Durchlauf 8 (unbegrenzt) ---
+2025-06-30 21:43:59,953 - INFO - Neue Tor-IP: 185.220.101.99
+2025-06-30 21:44:01,520 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:44:01,520 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:44:01,520 - INFO - Versuch #8 gestartet
+2025-06-30 21:44:02,877 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:44:02,898 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:44:02,898 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:44:02,903 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:44:03,909 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:44:04,185 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:44:04,447 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:44:06,498 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:44:07,236 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:44:07,493 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:44:09,514 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:44:09,743 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:44:10,012 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:44:12,042 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:44:12,260 - INFO - Element geklickt: votingButton
+2025-06-30 21:44:12,526 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:44:13,052 - INFO - Test durch Benutzer abgebrochen
+2025-06-30 21:44:13,063 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106c1da00>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/9ec4d0a6-8726-474a-9765-fc392b53feb7
+2025-06-30 21:44:13,065 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106c1dd30>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/9ec4d0a6-8726-474a-9765-fc392b53feb7
+2025-06-30 21:44:13,065 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x106c1e0c0>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/9ec4d0a6-8726-474a-9765-fc392b53feb7
+2025-06-30 21:44:13,066 - INFO - Browser geschlossen
+2025-06-30 21:44:13,066 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-06-30 21:44:13,066 - INFO - Gesamte Versuche: 8
+2025-06-30 21:44:13,066 - INFO - Erfolgreiche Versuche: 4
+2025-06-30 21:44:13,066 - INFO - Fehlgeschlagene Versuche: 3
+2025-06-30 21:44:13,066 - INFO - Erfolgsrate: 50.0%
+2025-06-30 21:46:21,524 - INFO - Starte unbegrenzten Test-Loop
+2025-06-30 21:46:23,407 - INFO - Neue Tor-IP: 185.220.101.154
+2025-06-30 21:46:24,890 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:46:24,890 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:46:24,890 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-06-30 21:46:24,890 - INFO - Versuch #1 gestartet
+2025-06-30 21:46:29,157 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:46:29,177 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:46:29,177 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:46:29,202 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:30,220 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:30,464 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:46:30,738 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:32,752 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:33,515 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:46:33,783 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:35,817 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:36,035 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:46:36,305 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:38,329 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:38,565 - INFO - Element geklickt: votingButton
+2025-06-30 21:46:38,835 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:40,360 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:40,360 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:46:40,360 - INFO - Erfolgreiche Versuche: 1
+2025-06-30 21:46:40,360 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:46:40,360 - INFO - Erfolgsrate: 100.0%
+2025-06-30 21:46:40,360 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-06-30 21:46:43,194 - INFO - Neue Tor-IP: 185.220.100.243
+2025-06-30 21:46:44,637 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:46:44,638 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:46:44,638 - INFO - Versuch #2 gestartet
+2025-06-30 21:46:46,548 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:46:46,550 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:46:46,550 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:46:46,597 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:47,605 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:47,848 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:46:48,110 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:50,124 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:51,382 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:46:51,644 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:53,659 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:53,873 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:46:54,146 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:56,168 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:56,393 - INFO - Element geklickt: votingButton
+2025-06-30 21:46:56,657 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:58,179 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:46:58,179 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:46:58,179 - INFO - Erfolgreiche Versuche: 2
+2025-06-30 21:46:58,179 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:46:58,179 - INFO - Erfolgsrate: 100.0%
+2025-06-30 21:46:58,180 - INFO - 
+--- Durchlauf 3 (unbegrenzt) ---
+2025-06-30 21:47:00,937 - INFO - Neue Tor-IP: 185.220.101.99
+2025-06-30 21:47:02,406 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:47:02,406 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:47:02,406 - INFO - Versuch #3 gestartet
+2025-06-30 21:47:03,785 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:47:03,787 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:47:03,787 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:47:03,793 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:04,816 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:05,045 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:47:05,307 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:07,330 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:09,107 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:47:09,370 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:11,395 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:11,622 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:47:11,895 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:13,913 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:14,138 - INFO - Element geklickt: votingButton
+2025-06-30 21:47:14,411 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:15,934 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:15,934 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:47:15,935 - INFO - Erfolgreiche Versuche: 3
+2025-06-30 21:47:15,935 - INFO - Fehlgeschlagene Versuche: 0
+2025-06-30 21:47:15,935 - INFO - Erfolgsrate: 100.0%
+2025-06-30 21:47:15,935 - INFO - 
+--- Durchlauf 4 (unbegrenzt) ---
+2025-06-30 21:47:19,052 - INFO - Neue Tor-IP: 87.118.122.51
+2025-06-30 21:47:20,526 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:47:20,526 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:47:20,526 - INFO - Versuch #4 gestartet
+2025-06-30 21:47:22,351 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:47:22,354 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:47:22,354 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:47:22,380 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:23,389 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:23,628 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:47:23,889 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:25,901 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:26,949 - ERROR - Fehler in Testsequenz: Message: Element <button class="c-embed__optinbutton c-button has-clickhandler" type="button"> is not clickable at point (622,309) because another element <div id="usercentrics-root"> obscures it; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:199:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:351:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:175:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.sys.mjs:134:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:327:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:210:31
+
+2025-06-30 21:47:26,950 - INFO - Erfolgreiche Versuche: 3
+2025-06-30 21:47:26,950 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:47:26,950 - INFO - Erfolgsrate: 75.0%
+2025-06-30 21:47:26,950 - INFO - 
+--- Durchlauf 5 (unbegrenzt) ---
+2025-06-30 21:47:30,006 - INFO - Neue Tor-IP: 185.220.101.106
+2025-06-30 21:47:31,425 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:47:31,425 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:47:31,425 - INFO - Versuch #5 gestartet
+2025-06-30 21:47:33,275 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:47:33,277 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:47:33,277 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:47:33,327 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:34,335 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:34,565 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:47:34,825 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:36,839 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:38,103 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:47:38,365 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:40,382 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:40,598 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:47:40,870 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:42,894 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:43,120 - INFO - Element geklickt: votingButton
+2025-06-30 21:47:43,392 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:44,916 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:44,916 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:47:44,916 - INFO - Erfolgreiche Versuche: 4
+2025-06-30 21:47:44,916 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:47:44,917 - INFO - Erfolgsrate: 80.0%
+2025-06-30 21:47:44,917 - INFO - 
+--- Durchlauf 6 (unbegrenzt) ---
+2025-06-30 21:47:47,598 - INFO - Neue Tor-IP: 37.114.50.142
+2025-06-30 21:47:49,055 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-06-30 21:47:49,055 - INFO - Tor Browser erfolgreich gestartet
+2025-06-30 21:47:49,055 - INFO - Versuch #6 gestartet
+2025-06-30 21:47:51,016 - INFO - Zoom auf 30% gesetzt
+2025-06-30 21:47:51,018 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-06-30 21:47:51,018 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-06-30 21:47:51,064 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:52,077 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:52,307 - INFO - Element geklickt: voteIntendButton
+2025-06-30 21:47:52,582 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:54,602 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:55,850 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-06-30 21:47:56,111 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:58,129 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:47:58,352 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-06-30 21:47:58,623 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:48:00,640 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:48:00,857 - INFO - Element geklickt: votingButton
+2025-06-30 21:48:01,132 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:48:02,653 - INFO - Kein Cookie-Banner gefunden oder Klick fehlgeschlagen.
+2025-06-30 21:48:02,653 - INFO - Versuch erfolgreich abgeschlossen!
+2025-06-30 21:48:02,653 - INFO - Erfolgreiche Versuche: 5
+2025-06-30 21:48:02,653 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:48:02,653 - INFO - Erfolgsrate: 83.3%
+2025-06-30 21:48:02,653 - INFO - 
+--- Durchlauf 7 (unbegrenzt) ---
+2025-06-30 21:48:05,366 - INFO - Test durch Benutzer abgebrochen
+2025-06-30 21:48:05,367 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x102a20c50>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/8d88fb57-5b68-45ba-8552-ada4e9797f7e
+2025-06-30 21:48:05,368 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x102a20f80>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/8d88fb57-5b68-45ba-8552-ada4e9797f7e
+2025-06-30 21:48:05,369 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x102a21070>: Failed to establish a new connection: [Errno 61] Connection refused')': /session/8d88fb57-5b68-45ba-8552-ada4e9797f7e
+2025-06-30 21:48:05,369 - INFO - Browser geschlossen
+2025-06-30 21:48:05,369 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-06-30 21:48:05,369 - INFO - Gesamte Versuche: 6
+2025-06-30 21:48:05,369 - INFO - Erfolgreiche Versuche: 5
+2025-06-30 21:48:05,369 - INFO - Fehlgeschlagene Versuche: 1
+2025-06-30 21:48:05,369 - INFO - Erfolgsrate: 83.3%
