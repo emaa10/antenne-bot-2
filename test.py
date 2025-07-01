@@ -42,7 +42,7 @@ class TorBotTester:
         try:
             self.configure_tor_for_german_exits()
             options = Options()
-            options.add_argument("--headless")  # Headless Modus
+            #options.add_argument("--headless")  # Headless Modus
             profile = webdriver.FirefoxProfile()
             
             profile.set_preference("network.proxy.type", 1)
@@ -77,7 +77,7 @@ class TorBotTester:
     def configure_tor_for_german_exits(self):
         """Tor für deutsche Exit-Knoten konfigurieren und neue IP anzeigen"""
         try:
-            subprocess.run("echo authenticate '' | nc localhost 9051 && echo signal newnym | nc localhost 9051 && echo quit | nc localhost 9051", shell=True)
+            subprocess.run("(   echo 'authenticate ""';   echo 'signal newnym';   echo 'quit'; ) | nc localhost 9051", shell=True)
             time.sleep(1.5)
             ip = subprocess.check_output(
                 "curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/", shell=True
@@ -364,24 +364,24 @@ def main():
     """Hauptfunktion"""
     # macOS-spezifische Pfade
     tor_path = "~/antenne-bot-2/tor"
-    geckodriver_path = "~/antenne-bot-2/geckodriver"  # Anpassen falls anders installiert
+    geckodriver_path = "/usr/local/bin/geckodriver"  # Anpassen falls anders installiert
     
     # Prüfen ob Geckodriver existiert
-    if not os.path.exists(geckodriver_path):
-        print("FEHLER: Geckodriver nicht gefunden.")
-        print("Installation für macOS:")
-        print("1. brew install geckodriver")
-        print("2. Oder manuell von https://github.com/mozilla/geckodriver/releases")
-        print(f"3. Geckodriver nach {geckodriver_path} kopieren")
-        sys.exit(1)
+    # if not os.path.exists(geckodriver_path):
+    #    print("FEHLER: Geckodriver nicht gefunden.")
+    #    print("Installation für macOS:")
+    #    print("1. brew install geckodriver")
+    #    print("2. Oder manuell von https://github.com/mozilla/geckodriver/releases")
+    #    print(f"3. Geckodriver nach {geckodriver_path} kopieren")
+    #    sys.exit(1)
     
     # Prüfen ob Tor Browser existiert
-    if not os.path.exists(tor_path):
-        print("FEHLER: Tor Browser nicht gefunden.")
-        print("Installation:")
-        print("1. Download von https://www.torproject.org/download/")
-        print("2. Tor Browser.app in den Applications-Ordner ziehen")
-        sys.exit(1)
+        #if not os.path.exists(tor_path):
+        #print("FEHLER: Tor Browser nicht gefunden.")
+        #print("Installation:")
+        #print("1. Download von https://www.torproject.org/download/")
+        #print("2. Tor Browser.app in den Applications-Ordner ziehen")
+    #sys.exit(1)
     
     print("WICHTIG: Stelle sicher, dass Tor läuft:")
     print("Entweder:")
