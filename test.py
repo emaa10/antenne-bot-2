@@ -42,7 +42,7 @@ class TorBotTester:
         try:
             self.configure_tor_for_german_exits()
             options = Options()
-            #options.add_argument("--headless")  # Headless Modus
+            options.add_argument("--headless")  # Headless Modus
             profile = webdriver.FirefoxProfile()
             
             profile.set_preference("network.proxy.type", 1)
@@ -77,7 +77,7 @@ class TorBotTester:
     def configure_tor_for_german_exits(self):
         """Tor für deutsche Exit-Knoten konfigurieren und neue IP anzeigen"""
         try:
-            subprocess.run("(   echo 'authenticate ""';   echo 'signal newnym';   echo 'quit'; ) | nc localhost 9051", shell=True)
+            #subprocess.run("(   echo 'authenticate ""';   echo 'signal newnym';   echo 'quit'; ) | nc localhost 9051", shell=True)
             time.sleep(1.5)
             ip = subprocess.check_output(
                 "curl --socks5 127.0.0.1:9050 http://checkip.amazonaws.com/", shell=True
@@ -120,7 +120,7 @@ Log notice stdout
     def new_tor_circuit(self):
         """Neuen Tor-Kanal erstellen mit deutschen Exit-Knoten"""
         try:
-            subprocess.run(["(echo authenticate ''; echo signal newnym; echo quit) | nc localhost 9051"], shell=True)
+            subprocess.run(["(   echo 'authenticate ""';   echo 'signal newnym';   echo 'quit'; ) | nc localhost 9051"], shell=True)
             self.restart_browser()
                 
         except Exception as e:
