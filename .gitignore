@@ -1,3 +1,5 @@
 tor.exe
 Browser/
 tor-browser_de
+venv
+.DS_Store
