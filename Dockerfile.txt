@@ -1,0 +1,50 @@
+# Verwende ein schlankes Python‑Image mit Multi‑Arch‑Support
+FROM --platform=$BUILDPLATFORM python:3.11-slim
+
+# Meta-Labels
+LABEL maintainer="Emanuel Berger <emanuel@bergerhq.de>" \
+      description="Antenne Bot"
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        tor \
+        firefox-esr \
+        netcat \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Geckodriver manuell installieren
+ARG GECKO_VERSION=v0.34.0
+RUN set -eux; \
+    wget -qO /tmp/geckodriver.tar.gz \
+        https://github.com/mozilla/geckodriver/releases/download/${GECKO_VERSION}/geckodriver-${GECKO_VERSION}-linux64.tar.gz; \
+    tar -xzf /tmp/geckodriver.tar.gz -C /usr/local/bin; \
+    rm /tmp/geckodriver.tar.gz
+
+# Arbeitsverzeichnis
+WORKDIR /app
+
+# Tor‑Config kopieren
+COPY torrc /etc/tor/torrc
+
+# Python‑Requirements installieren
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Bot‑Skript kopieren
+COPY main.py .
+
+# Standard-Umgebungsvariablen
+ENV TOR_SOCKS_PORT=9050 \
+    TOR_CONTROL_PORT=9051 \
+    GECKODRIVER_PATH=/usr/local/bin/geckodriver \
+    FIREFOX_BINARY=/usr/bin/firefox-esr \
+    TORRC_PATH=/etc/tor/torrc
+
+# Exponiere Ports (wenn gewünscht zum Überwachen oder mappen)
+EXPOSE 9050 9051
+
+# Startscript: Tor im Hintergrund und dann Bot
+ENTRYPOINT ["sh", "-c", "\
+    tor -f $TORRC_PATH & \
+    sleep 5 && \
+    python main.py \
+"]
