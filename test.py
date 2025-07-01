@@ -363,8 +363,8 @@ Log notice stdout
 def main():
     """Hauptfunktion"""
     # macOS-spezifische Pfade
-    tor_path = "/Applications/Tor Browser.app"
-    geckodriver_path = "/usr/local/bin/geckodriver"  # Anpassen falls anders installiert
+    tor_path = "~/antenne-bot-2/tor"
+    geckodriver_path = "~/antenne-bot-2/geckodriver"  # Anpassen falls anders installiert
     
     # Prüfen ob Geckodriver existiert
     if not os.path.exists(geckodriver_path):

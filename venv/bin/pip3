@@ -1,4 +1,4 @@
-#!/Users/emanuel/Desktop/bot/venv/bin/python3.12
+#!/home/pi/antenne-bot-2/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
