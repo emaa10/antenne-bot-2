@@ -42,7 +42,7 @@ class TorBotTester:
         try:
             self.configure_tor_for_german_exits()
             options = Options()
-            #options.add_argument("--headless")  # Headless Modus
+            options.add_argument("--headless")  # Headless Modus
             profile = webdriver.FirefoxProfile()
             
             profile.set_preference("network.proxy.type", 1)
@@ -61,6 +61,9 @@ class TorBotTester:
                 service=service,
                 options=options
             )
+
+            self.driver.install_addon("addon.xpi", temporary=True)
+
             self.driver.set_page_load_timeout(10)
             self.driver.execute_script("document.body.style.zoom='30%'")
             logger.info("Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten")
