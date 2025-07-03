@@ -51,7 +51,7 @@ jobs:
           screen -dmS py_session bash -c "source venv/bin/activate && python3 ./LINUX.py > python.log 2>&1"
 
       - name: Wait for up to 2 hours
-        run: sleep 7200
+        run: sleep 30
 
       - name: Show last 100 lines of logs
         run: |
