@@ -1,0 +1,220 @@
+2025-07-03 19:14:25,240 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 19:14:30,482 - ERROR - Fehler beim Starten des Tor Browsers: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+
+2025-07-03 19:14:30,483 - ERROR - Konnte Tor Browser nicht starten
+2025-07-03 19:17:07,233 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 19:17:13,070 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-07-03 19:17:13,071 - INFO - Tor Browser erfolgreich gestartet
+2025-07-03 19:17:13,071 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-07-03 19:17:13,071 - INFO - Versuch #1 gestartet
+2025-07-03 19:17:13,600 - INFO - Zoom auf 30% gesetzt
+2025-07-03 19:17:13,635 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 19:17:13,636 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 19:17:14,939 - INFO - Element geklickt: voteIntendButton
+2025-07-03 19:17:17,437 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 19:17:19,914 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 19:17:22,907 - INFO - Element geklickt: votingButton
+2025-07-03 19:17:24,681 - INFO - Versuch erfolgreich abgeschlossen!
+2025-07-03 19:18:06,905 - INFO - Test durch Benutzer abgebrochen
+2025-07-03 19:18:06,907 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)': /session/da255de5-cd27-4cfa-8cde-5bfc6e313e30
+2025-07-03 19:18:10,999 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027A60E0E080>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte')': /session/da255de5-cd27-4cfa-8cde-5bfc6e313e30
+2025-07-03 19:18:15,091 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027A60E0EB60>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte')': /session/da255de5-cd27-4cfa-8cde-5bfc6e313e30
+2025-07-03 19:18:21,298 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 19:18:26,978 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-07-03 19:18:26,979 - INFO - Tor Browser erfolgreich gestartet
+2025-07-03 19:18:26,979 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-07-03 19:18:26,979 - INFO - Versuch #1 gestartet
+2025-07-03 19:18:27,345 - INFO - Zoom auf 30% gesetzt
+2025-07-03 19:18:27,374 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 19:18:27,374 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 19:18:28,614 - INFO - Element geklickt: voteIntendButton
+2025-07-03 19:18:31,100 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 19:18:33,574 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 19:18:36,073 - INFO - Element geklickt: votingButton
+2025-07-03 19:18:37,845 - INFO - Versuch erfolgreich abgeschlossen!
+2025-07-03 19:18:40,519 - INFO - Test durch Benutzer abgebrochen
+2025-07-03 19:18:40,520 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)': /session/cf2ab643-f4cc-47c9-98ee-d5539353acb5
+2025-07-03 19:18:44,614 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002AA03F4E080>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte')': /session/cf2ab643-f4cc-47c9-98ee-d5539353acb5
+2025-07-03 19:18:48,707 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002AA03F4EB60>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte')': /session/cf2ab643-f4cc-47c9-98ee-d5539353acb5
+2025-07-03 19:18:53,398 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 19:19:00,037 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-07-03 19:19:00,037 - INFO - Tor Browser erfolgreich gestartet
+2025-07-03 19:19:00,037 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-07-03 19:19:00,037 - INFO - Versuch #1 gestartet
+2025-07-03 19:19:00,417 - INFO - Zoom auf 30% gesetzt
+2025-07-03 19:19:00,423 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 19:19:00,423 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 19:19:01,675 - INFO - Element geklickt: voteIntendButton
+2025-07-03 19:19:04,175 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 19:19:06,650 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 19:19:09,659 - INFO - Element geklickt: votingButton
+2025-07-03 19:19:11,431 - WARNING - Fehler-Meldung erkannt
+2025-07-03 19:19:11,431 - WARNING - Fehler-Meldung erkannt - Versuch nicht gezählt
+2025-07-03 19:20:09,432 - INFO - Erfolgsrate pro Minute: 0.00
+2025-07-03 19:20:09,432 - INFO - Erfolgreiche Versuche: 0
+2025-07-03 19:20:09,433 - INFO - Fehlgeschlagene Versuche: 1
+2025-07-03 19:20:09,433 - INFO - Erfolgsrate: 0.0%
+2025-07-03 19:20:09,433 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-07-03 19:20:12,133 - INFO - Browser geschlossen
+2025-07-03 19:20:12,133 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-07-03 19:20:12,134 - INFO - Gesamte Versuche: 1
+2025-07-03 19:20:12,134 - INFO - Erfolgreiche Versuche: 0
+2025-07-03 19:20:12,134 - INFO - Fehlgeschlagene Versuche: 1
+2025-07-03 19:20:12,134 - INFO - Erfolgsrate: 0.0%
+2025-07-03 19:21:47,110 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 19:21:54,005 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-07-03 19:21:54,005 - INFO - Tor Browser erfolgreich gestartet
+2025-07-03 19:21:54,006 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-07-03 19:21:54,006 - INFO - Versuch #1 gestartet
+2025-07-03 19:21:54,723 - INFO - Zoom auf 30% gesetzt
+2025-07-03 19:21:54,728 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 19:21:54,728 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 19:21:55,981 - INFO - Element geklickt: voteIntendButton
+2025-07-03 19:21:58,489 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 19:22:00,992 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 19:22:03,985 - INFO - Element geklickt: votingButton
+2025-07-03 19:22:05,756 - INFO - Versuch erfolgreich abgeschlossen!
+2025-07-03 19:23:03,833 - INFO - Erfolgsrate pro Minute: 0.78
+2025-07-03 19:23:03,834 - INFO - Erfolgreiche Versuche: 1
+2025-07-03 19:23:03,834 - INFO - Fehlgeschlagene Versuche: 0
+2025-07-03 19:23:03,834 - INFO - Erfolgsrate: 100.0%
+2025-07-03 19:23:03,834 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-07-03 19:23:06,840 - INFO - Versuch #2 gestartet
+2025-07-03 19:23:07,005 - INFO - Zoom auf 30% gesetzt
+2025-07-03 19:23:07,091 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 19:23:07,091 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 19:23:08,322 - INFO - Element geklickt: voteIntendButton
+2025-07-03 19:23:10,803 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 19:23:13,293 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 19:23:16,289 - INFO - Element geklickt: votingButton
+2025-07-03 19:23:18,061 - INFO - Versuch erfolgreich abgeschlossen!
+2025-07-03 19:24:16,182 - INFO - Erfolgsrate pro Minute: 0.80
+2025-07-03 19:24:16,182 - INFO - Erfolgreiche Versuche: 2
+2025-07-03 19:24:16,182 - INFO - Fehlgeschlagene Versuche: 0
+2025-07-03 19:24:16,182 - INFO - Erfolgsrate: 100.0%
+2025-07-03 19:24:16,183 - INFO - 
+--- Durchlauf 3 (unbegrenzt) ---
+2025-07-03 19:24:19,096 - INFO - Versuch #3 gestartet
+2025-07-03 19:24:19,275 - INFO - Zoom auf 30% gesetzt
+2025-07-03 19:24:19,342 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 19:24:19,342 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 19:24:20,601 - INFO - Element geklickt: voteIntendButton
+2025-07-03 19:24:23,112 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 19:24:25,622 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 19:24:29,654 - INFO - Element geklickt: votingButton
+2025-07-03 19:24:31,429 - INFO - Versuch erfolgreich abgeschlossen!
+2025-07-03 19:24:57,471 - INFO - Test durch Benutzer abgebrochen
+2025-07-03 19:24:57,473 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)': /session/c95411fc-4474-4029-a623-64d8a550876b
+2025-07-03 19:25:01,135 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 19:25:06,975 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-07-03 19:25:06,976 - INFO - Tor Browser erfolgreich gestartet
+2025-07-03 19:25:06,976 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-07-03 19:25:06,976 - INFO - Versuch #1 gestartet
+2025-07-03 19:25:11,105 - INFO - Zoom auf 30% gesetzt
+2025-07-03 19:25:11,140 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 19:25:11,141 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 19:25:12,384 - INFO - Element geklickt: voteIntendButton
+2025-07-03 19:25:14,863 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 19:25:17,355 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 19:25:20,347 - INFO - Element geklickt: votingButton
+2025-07-03 19:25:22,118 - WARNING - Fehler-Meldung erkannt
+2025-07-03 19:25:22,118 - WARNING - Fehler-Meldung erkannt - Versuch nicht gezählt
+2025-07-03 19:25:30,522 - INFO - Test durch Benutzer abgebrochen
+2025-07-03 19:25:30,523 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)': /session/5e1c36f2-5f01-49bc-8d55-22933ea1d2da
+2025-07-03 19:25:34,620 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000248E52FD030>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte')': /session/5e1c36f2-5f01-49bc-8d55-22933ea1d2da
+2025-07-03 19:25:38,712 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000248E52FDFF0>: Failed to establish a new connection: [WinError 10061] Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte')': /session/5e1c36f2-5f01-49bc-8d55-22933ea1d2da
+2025-07-03 19:25:42,805 - INFO - Browser geschlossen
+2025-07-03 19:25:42,805 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-07-03 19:25:42,805 - INFO - Gesamte Versuche: 1
+2025-07-03 19:25:42,805 - INFO - Erfolgreiche Versuche: 0
+2025-07-03 19:25:42,806 - INFO - Fehlgeschlagene Versuche: 1
+2025-07-03 19:25:42,806 - INFO - Erfolgsrate: 0.0%
+2025-07-03 19:28:54,426 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 19:29:00,339 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-07-03 19:29:00,339 - INFO - Tor Browser erfolgreich gestartet
+2025-07-03 19:29:00,340 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-07-03 19:29:00,340 - INFO - Versuch #1 gestartet
+2025-07-03 19:29:00,842 - INFO - Zoom auf 30% gesetzt
+2025-07-03 19:29:00,883 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 19:29:00,883 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 19:29:02,133 - INFO - Element geklickt: voteIntendButton
+2025-07-03 19:29:04,631 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 19:29:07,106 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 19:29:11,124 - INFO - Element geklickt: votingButton
+2025-07-03 19:29:12,894 - INFO - Versuch erfolgreich abgeschlossen!
+2025-07-03 19:29:13,019 - INFO - Warte 1 min bis zum nächsten Vote
+2025-07-03 19:29:17,473 - INFO - Test durch Benutzer abgebrochen
+2025-07-03 19:29:17,474 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)': /session/3943ff15-4e26-41f4-9652-788c0014d4e5
+2025-07-03 19:34:38,244 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 19:34:44,196 - INFO - Zoom-Faktor auf 30% gesetzt, um vollständige Sichtbarkeit zu gewährleisten
+2025-07-03 19:34:44,196 - INFO - Tor Browser erfolgreich gestartet
+2025-07-03 19:34:44,196 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-07-03 19:34:44,196 - INFO - Versuch #1 gestartet
+2025-07-03 19:34:44,710 - INFO - Zoom auf 30% gesetzt
+2025-07-03 19:34:44,715 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 19:34:44,715 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 19:34:45,973 - INFO - Element geklickt: voteIntendButton
+2025-07-03 19:34:47,261 - INFO - Test durch Benutzer abgebrochen
+2025-07-03 19:34:47,262 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)': /session/4fcb1a83-de52-4e16-a19a-74d10efbcb16
+2025-07-03 20:55:20,102 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 20:55:25,600 - INFO - Neues Browserprofil mit User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 Chrome/58.0 Safari/537.36
+2025-07-03 20:55:25,600 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-07-03 20:55:25,600 - INFO - Versuch #1 gestartet
+2025-07-03 20:55:26,261 - INFO - Zoom auf 30% gesetzt
+2025-07-03 20:55:26,302 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 20:55:26,302 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 20:55:27,566 - INFO - Element geklickt: voteIntendButton
+2025-07-03 20:55:30,063 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 20:55:32,550 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 20:55:35,019 - INFO - Element geklickt: votingButton
+2025-07-03 20:55:36,793 - INFO - Versuch erfolgreich abgeschlossen!
+2025-07-03 20:55:36,918 - INFO - Warte 1 min bis zum nächsten Vote
+2025-07-03 20:55:40,427 - INFO - Test durch Benutzer abgebrochen
+2025-07-03 20:55:40,429 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)': /session/01179ed1-c6fb-4078-9873-8e337f76dfe5
+2025-07-03 20:56:30,875 - INFO - Starte unbegrenzten Test-Loop
+2025-07-03 20:56:36,416 - INFO - Neues Browserprofil mit User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/114.0 Safari/537.36
+2025-07-03 20:56:36,416 - INFO - 
+--- Durchlauf 1 (unbegrenzt) ---
+2025-07-03 20:56:36,416 - INFO - Versuch #1 gestartet
+2025-07-03 20:56:37,111 - INFO - Zoom auf 30% gesetzt
+2025-07-03 20:56:37,144 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 20:56:37,144 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 20:56:38,382 - INFO - Element geklickt: voteIntendButton
+2025-07-03 20:56:40,871 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 20:56:43,343 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/div/div/div[1]/div/div/div/button
+2025-07-03 20:56:46,335 - INFO - Element geklickt: votingButton
+2025-07-03 20:56:48,109 - INFO - Versuch erfolgreich abgeschlossen!
+2025-07-03 20:56:48,177 - INFO - Erfolgsrate pro Minute: 3.47
+2025-07-03 20:56:48,177 - INFO - Erfolgreiche Versuche: 1
+2025-07-03 20:56:48,177 - INFO - Fehlgeschlagene Versuche: 0
+2025-07-03 20:56:48,177 - INFO - Erfolgsrate: 100.0%
+2025-07-03 20:56:48,177 - INFO - 
+--- Durchlauf 2 (unbegrenzt) ---
+2025-07-03 20:56:50,848 - INFO - Browser geschlossen
+2025-07-03 20:56:50,848 - INFO - 
+=== FINALE STATISTIKEN ===
+2025-07-03 20:56:50,848 - INFO - Gesamte Versuche: 1
+2025-07-03 20:56:50,848 - INFO - Erfolgreiche Versuche: 1
+2025-07-03 20:56:50,848 - INFO - Fehlgeschlagene Versuche: 0
+2025-07-03 20:56:50,849 - INFO - Erfolgsrate: 100.0%
+2025-07-03 20:56:55,807 - INFO - Neues Browserprofil mit User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 13_2_1) AppleWebKit/605.1.15 Version/16.3 Safari/605.1.15
+2025-07-03 20:56:55,807 - INFO - Versuch #2 gestartet
+2025-07-03 20:56:56,445 - INFO - Zoom auf 30% gesetzt
+2025-07-03 20:56:56,476 - INFO - Anti-Bot-Erkennung: navigator.webdriver & Plugins gefälscht
+2025-07-03 20:56:56,477 - INFO - Website geladen: https://www.antenne.de/programm/aktionen/die-antenne-bayern-schulhof-gigs/schulen/13248-gymnasium-markt-indersdorf
+2025-07-03 20:56:57,713 - INFO - Element geklickt: voteIntendButton
+2025-07-03 20:57:00,195 - INFO - Element geklickt: /html/body/div[1]/div[2]/main/div[2]/div/div[1]/form/fieldset/div/aside/button
+2025-07-03 20:57:00,679 - INFO - Test durch Benutzer abgebrochen
+2025-07-03 20:57:00,680 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None)': /session/f7279489-641b-445b-ae11-fb0c41f47dfa
