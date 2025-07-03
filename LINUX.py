@@ -323,7 +323,7 @@ Log notice stdout
             self.dismiss_cookie_banner()
             
             # 5. Voting Button klicken
-            if not self.click_element("id", "votingButton", 8):
+            if not self.click_element("id", "votingButton", 20):
                 logger.error("Schritt 4 fehlgeschlagen: votingButton nicht gefunden")
                 return False
 
@@ -343,6 +343,7 @@ Log notice stdout
             # Erfolg
             self.successful_attempts += 1
             logger.info("Versuch erfolgreich abgeschlossen!")
+            response = requests.get("https://counterantenne.bergerhq.de/api/increment", allow_redirects=True)
             return True
             
         except Exception as e:
