@@ -42,11 +42,29 @@ jobs:
           pip install --upgrade pip
           pip install selenium requests
 
-      - name: Start TOR in screen (detached)
+      - name: Start TOR in screen (log to tor.log)
         run: |
-          screen -dmS tor_session bash -c "tor -f ./torrc"
+          screen -dmS tor_session bash -c "tor -f ./torrc > tor.log 2>&1"
 
-      - name: Run Python script (interactive)
+      - name: Start Python script in screen (log to python.log)
         run: |
-          source venv/bin/activate
-          python3 ./LINUX.py
+          screen -dmS py_session bash -c "source venv/bin/activate && python3 ./LINUX.py > python.log 2>&1"
+
+      - name: Wait for up to 2 hours
+        run: sleep 7200
+
+      - name: Show last 100 lines of logs
+        run: |
+          echo "==== TOR LOG ===="
+          tail -n 100 tor.log || echo "tor.log fehlt"
+          echo ""
+          echo "==== PYTHON LOG ===="
+          tail -n 100 python.log || echo "python.log fehlt"
+
+      - name: Upload logs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: runner-logs
+          path: |
+            tor.log
+            python.log
