@@ -68,7 +68,7 @@ jobs:
 
 
       - name: Wait for up to 2 hours
-        run: sleep 7000
+        run: sleep 70
         
       - name: Show last 100 lines of logs
         run: |
