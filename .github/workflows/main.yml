@@ -28,6 +28,14 @@ jobs:
         run: |
           sudo systemctl disable tor || true
 
+      - name: Stop systemd Tor
+        run: |
+          sudo systemctl stop tor || true
+
+      - name: Kill systemd Tor
+        run: |
+          sudo killall tor || true
+
       - name: Install geckodriver
         run: |
           GECKO_VERSION=$(curl -s https://api.github.com/repos/mozilla/geckodriver/releases/latest | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
@@ -48,11 +56,20 @@ jobs:
 
       - name: Start Python script in screen (log to python.log)
         run: |
-          screen -dmS py_session bash -c "source venv/bin/activate && python3 ./LINUX.py > python.log 2>&1"
+          screen -dmS py_session1 bash -c "source venv/bin/activate && python3 ./LINUX.py > python.log 2>&1"
+
+      - name: Start Python script 2 in screen (log to python.log)
+        run: |
+          screen -dmS py_session2 bash -c "source venv/bin/activate && python3 ./LINUX.py > python.log 2>&1"
+
+      - name: Start Python script 3 in screen (log to python.log)
+        run: |
+          screen -dmS py_session3 bash -c "source venv/bin/activate && python3 ./LINUX.py > python.log 2>&1"
+
 
       - name: Wait for up to 2 hours
-        run: sleep 300
-
+        run: sleep 7000
+        
       - name: Show last 100 lines of logs
         run: |
           echo "==== TOR LOG ===="
